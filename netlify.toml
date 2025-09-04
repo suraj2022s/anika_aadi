@@ -3,13 +3,11 @@
   publish = "build"
   functions = "functions"
 
-# Redirect API requests to Netlify functions
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
 
-# React SPA fallback (lets React Router handle routes)
 [[redirects]]
   from = "/*"
   to = "/index.html"
