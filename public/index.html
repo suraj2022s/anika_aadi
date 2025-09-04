@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anika & Aadi</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: '#fff1f5',
+                100: '#ffe4ec',
+                200: '#fecdd8',
+                300: '#fba4bd',
+                400: '#f472b6',
+                500: '#ec4899',
+                600: '#db2777',
+                700: '#be185d',
+                800: '#9d174d',
+                900: '#831843'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      body{ background: linear-gradient(180deg, #fff1f5 0%, #ffffff 30%, #fff7fb 100%); color:#1f2937; }
+      .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); box-shadow: 0 10px 30px rgba(236,72,153,0.15); }
+      .hero {
+        background: radial-gradient(1200px 600px at 20% -20%, #ffe4ec 20%, transparent 60%),
+                    radial-gradient(900px 500px at 100% 0%, #fecdd8 10%, transparent 60%),
+                    linear-gradient(180deg, #fff1f5, #ffffff);
+      }
+      .blurred { filter: blur(10px) brightness(0.85); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>
